@@ -217,12 +217,17 @@ body
     margin-top: 72px;
 }
 
+.about__wrapper__posetion
+{
+    position: relative;
+}
+
 .posetion__blur
 {
     text-align: center;
     position: absolute;
-    left: 490px;
-    bottom: -690px;
+    left: 285px;
+    bottom: -50px;
     width: 197px;
     height: 104px;
     background: rgba(255, 255, 255, 0.1);
@@ -362,13 +367,13 @@ body
 .feature
 {
     height: 700px;
-    position: relative;
 }
 
 .feature__img-title
 {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .feature__title
