@@ -740,3 +740,35 @@ footer
         top: 300px;
     }
 }
+
+
+@media only screen and (max-width: 1440px){
+    .blur2{
+        position: absolute;
+        left: 1011px;
+        top: 285px;
+    }
+
+    .blur4{
+        position: absolute;
+        left: 1003px;
+        top: -30px;
+    }
+
+    .feature__statistics{
+        width: 127px;
+        height: 92px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        left: 546px;
+        top: 227px;
+    }
+
+    .feature__statistics:nth-child(3){
+        left: 776px;
+        top: 300px;
+    }
+}
