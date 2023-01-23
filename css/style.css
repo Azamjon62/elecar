@@ -21,7 +21,6 @@ a{
 body
 {
     background: #0A0A0B;
-    width: 100%;
 }
 
 .conta
@@ -39,6 +38,29 @@ body
 .blur1
 {
     position: absolute;
+}
+
+.containers {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 .header
@@ -70,6 +92,10 @@ body
     margin: 0 0 3px 5px;
 }
 
+.header__nav
+{
+
+}
 
 .header__nav__list
 {
@@ -851,13 +877,13 @@ footer
 
     .blur2{
         position: absolute;
-        left: 295px;
+        left: 339px;
         top: 285px;
     }
 
     .blur4{
         position: absolute;
-        left: 288px;
+        left: 332px;
         top: -30px;
     }
 
@@ -869,7 +895,6 @@ footer
         color: #fff;
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
         flex-direction: column;
         margin-top: 72px;
     }
@@ -894,6 +919,10 @@ footer
         display: none;
     }
 
+    .feature__img{
+        width: 768px;
+        margin: -30px auto;
+    }
 
     .feature__statistics{
         width: 127px;
@@ -903,12 +932,12 @@ footer
         border-radius: 20px;
         text-align: center;
         position: absolute;
-        left: 340px;
-        top: 227px;
+        left: 230px;
+        top: 205px;
     }
 
     .feature__statistics:nth-child(3){
-        left: 566px;
+        left: 430px;
         top: 300px;
     }
 
@@ -930,6 +959,7 @@ footer
     }
 
     .luxury-cars__wrapper-imgcar{
+        width: 270px;
         position: absolute;
         top: 602px;
         left: 408px;
@@ -951,7 +981,208 @@ footer
     .advertizing__wrapper{
         display: flex;
         flex-direction: column;
-        /* justify-content: space-around; */
     }
 
+}
+
+
+@media only screen and (max-width: 425px){
+
+    .containers {
+        z-index: 999;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .container{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .conta{
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    /* .main__section__text{
+        margin-left: 35px;
+    } */
+
+    .blur1{
+        width: 425px;
+        position: absolute;
+    }
+
+    .blur2{
+        position: absolute;
+        left: 25px;
+        top: 285px;
+    }
+
+    .blur4{
+        position: absolute;
+        left: 18px;
+        top: 600px;
+    }
+
+    .about{
+        height: 700px;
+    }
+
+    .about__wrapper{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 72px;
+    }
+
+    .about__wrapper-flex{
+        margin-top: 100px;
+    }
+
+    .posetion__blur{
+        text-align: center;
+        position: absolute;
+        left: 285px;
+        bottom: -50px;
+        width: 197px;
+        height: 104px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+    }
+
+    .popular__wrapper__flex a:nth-child(3){
+        display: none;
+    }
+
+    .popular__wrapper__flex a:nth-child(2){
+        display: none;
+    }
+
+
+
+    .feature__img{
+        width: 425px;
+        height: 500px;
+        margin: -30px auto;
+    }
+
+    .feature__statistics{
+        width: 90px;
+        height: 85px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        left: 100px;
+        top: 320px;
+        margin-top: -80px;
+    }
+
+    .feature__statistics:nth-child(3){
+        left: 240px;
+        top: 370px;
+    }
+
+    .luxury-cars__wrapper-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        color: #F1F2F3;
+        margin-top: 56px;
+    }
+
+    .luxury-cars__wrapper{
+        position: relative;
+        height: 2200px;
+    }
+
+    .luxury-cars__wrapper-imgcars{
+        margin-left: 65px;
+        display: inline-block;
+    }
+
+    .luxury-cars__wrapper-imgcars a:nth-child(2) {
+        margin-top: 65px;
+    }
+
+    .luxury-cars__wrapper-imgcar{
+        margin-top: 820px;
+        margin-left: -340px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .luxury-cars__wrapper-imgcar a:nth-child(2){
+        margin: 65px 0 0 0;
+        display: flex;
+    }
+
+    .advertizing{
+        margin-top: 72px;
+        background: url(/img/img20.svg);
+        width: 454px;
+        height: 392px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advertizing{
+        margin-top: 72px;
+        background: url(/img/img20.svg);
+        height: 792px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advertizing__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brends{
+        padding: 72px 0 74px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+    .brends div
+    {
+        padding: 72px 0 74px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__section{
+        height: 765px;
+    }
+
+    .section__wrapper
+    {
+        z-index: 99999;
+    }
+    
+
+
+    .footer__section__wrapper{
+        margin-top: 60px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: center;
+    }
 }
